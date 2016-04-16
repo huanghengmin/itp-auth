@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class table="ftpusers" name="com.hzih.itp.auth.domain.FtpUser">
+        <id access="field" name="name" length="16" column="name" type="string" />
+        <property name="passwd" length="48" column="passwd" access="field" type="string"/>
+    </class>
+</hibernate-mapping>
